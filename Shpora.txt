@@ -79,3 +79,4 @@ git branch -a - все бранчи, вкл удалённые
 git fetch - актуализирует локальный репозиторий origin/master с удалённым репозиторием
 git merge origin/master - слияние origin/master(который мы fetch) с master
 git pull - переносит изменения с origin/master в master
+git branch <название бранча> <origin/название удалённого бранча> - добавить в свои бранчи "удалённый" отслеживаемый бранч другого человека
