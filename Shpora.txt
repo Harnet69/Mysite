@@ -1,6 +1,8 @@
-﻿	Работа с Git log
-Ещё что то добавим чтобы смержить с мастером!
+﻿	Работа с Git
+
 Чтобы git  видел русское название файлов необходимо ввести параметр quotepath в секцию [core], установив его в false. 
+
+$ ssh-keygen -t rsa -b 4096 -C "motobycom@tut.by" - сгенерировать Ssh ключ
 
 quotepath = false 
 git status - просмотр состояния
@@ -91,3 +93,11 @@ git branch origin :<имя бранча> - удаление сетевого б�
 git push origin :<имя бранча> - удаление сетевого бранча
 git push origin --delete <имя бранча> - удаление сетевого бранча (способ 2)
 
+git config --global alias.st "status" - назначить синоним(алиас) для стандартной команды GIT
+   Стандартные алиасы :
+git config --global alias.co "checkout"
+git config --global alias.ci "commit"
+git config --global alias.br "branch"
+git config --global alias.df "diff"
+git config --global alias.dfs "diff --staged"
+git config --global alias.logg "log --graph --decorate --all --abbrev-commit --oneline"
